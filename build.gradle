@@ -1,0 +1,25 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '1.2.5.RELEASE'
+    }
+}
+
+group 'fr.skym'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'spring-boot'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.4'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
